@@ -5,10 +5,10 @@ import Project from "./Project";
 export default function Projects() {
   return (
     <section className="section">
-      <h2 className="sectionTitle" id="projects" tabIndex={-1}>
+      <h2 className="sectionTitle" id="projects">
         Projects
       </h2>
-      <div className="projectGrid">
+      <div className="projGrid">
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}

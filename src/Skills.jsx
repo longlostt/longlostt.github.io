@@ -5,7 +5,7 @@ import Skill from "./Skill";
 export default function Skills() {
   return (
     <section className="section">
-      <h2 className="sectionTitle" id="skills" tabIndex={-1}>
+      <h2 className="sectionTitle" id="skills">
         Skills
       </h2>
       <div className="skills">

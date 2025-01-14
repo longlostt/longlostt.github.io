@@ -7,18 +7,18 @@ export default function Header() {
   return (
     <header className="header">
       <div className="headerContent">
-        <h1 className="title">
-          Hi, I'm <span className="title-name">Georgy Bochnev</span>
+        <h1 className="intro">
+          Hi, I'm <span className="name">Georgy Bochnev</span>
         </h1>
-        <p className="subtitle">Software Developer</p>
+        <p className="prof">Software Developer</p>
         <div className="contactLinks">
-          <a href="mailto:bg2811777@gmail.com" className="iconLink">
+          <a href="mailto:bg2811777@gmail.com" className="icon">
             <CiMail size={26} />
           </a>
-          <a href="https://www.linkedin.com/in/georgy-bochnev" target="_blank" rel="noopener noreferrer" className="iconLink">
+          <a href="https://www.linkedin.com/in/georgy-bochnev" target="_blank" rel="noopener noreferrer" className="icon">
             <FaLinkedin size={26} />
           </a>
-          <a href="https://github.com/longlostt" target="_blank" rel="noopener noreferrer" className="iconLink">
+          <a href="https://github.com/longlostt" target="_blank" rel="noopener noreferrer" className="icon">
             <LuGithub size={26} />
           </a>
         </div>

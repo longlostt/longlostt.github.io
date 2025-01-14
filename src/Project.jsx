@@ -16,7 +16,7 @@ export default function Project({ project }) {
   };
 
   return (
-    <div className="card">
+    <div className="proj">
       <div className="imageGallery">
         {project.image.length > 1 && (
           <button onClick={prevImage} className="arrow leftArrow">
@@ -26,7 +26,7 @@ export default function Project({ project }) {
         <img
           src={project.image[currentIndex]}
           alt={`${project.title} - ${currentIndex + 1}`}
-          className="cardImage"
+          className="projImage"
         />
         {project.image.length > 1 && (
           <button onClick={nextImage} className="arrow rightArrow">
@@ -34,15 +34,15 @@ export default function Project({ project }) {
           </button>
         )}
       </div>
-      <div className="cardContent">
-        <h3 className="cardTitle">{project.title}</h3>
-        <p className="cardDescription">{project.description}</p>
-        <p className="cardTech">
+      <div className="projContent">
+        <h3 className="projTitle">{project.title}</h3>
+        <p className="projDescription">{project.description}</p>
+        <p className="projTech">
           Technologies: {project.technologies.join(", ")}
         </p>
-        <ul className="featureList">
+        <ul className="features">
           {project.features.map((feature, index) => (
-            <li key={index} className="featureItem">
+            <li key={index} className="feature">
               <GoDot style={{ margin: '0 3px 0 -3px' }} /> {feature.text}
             </li>
           ))}

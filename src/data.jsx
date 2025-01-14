@@ -3,7 +3,7 @@ import mobilePad2 from "./assets/MobilePad2.jpg";
 import portfolio from "./assets/portfolio.jpg";
 import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
 export const skills = [
@@ -15,7 +15,6 @@ export const skills = [
   { title: "MongoDB", image: <DiMongodb size={80} /> },
   { title: "React.js", image: <FaReact size={80} /> },
   { title: "BootStrap", image: <FaBootstrap size={80} /> },
-  { title: "TailWind CSS", image: <SiTailwindcss size={80} /> },
 ];
 
 export const projects = [
@@ -25,7 +24,6 @@ export const projects = [
     image: [mobilePad1, mobilePad2],
     technologies: ["Node.js", "MongoDB", "Express", "JavaScript", "HTML/CSS"],
     description: "Mobile Calling Web App.",
-    github: "https://github.com/longlostt/mobilePad",
     features: [
       { text: "User Authentication" },
       { text: "Data Management" },
@@ -38,7 +36,6 @@ export const projects = [
     image: [portfolio],
     technologies: ["HTML/CSS", "JavaScript", "React.js", "Vite"],
     description: "A portfolio website to showcase my projects and skills",
-    github: "https://github.com/longlostt/portfolio",
     features: [
       { text: "Responsive Web Design" },
       { text: "SEO Optimized" },
