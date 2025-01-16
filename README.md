@@ -21,12 +21,12 @@ This is a personal portfolio website built with **React** and **Vite**, showcasi
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/yourusername/portfolio.git
+    git clone https://github.com/longlostt/longlostt.github.io.git
     ```
 
 2. Navigate into the project directory:
     ```bash
-    cd portfolio
+    cd longlostt.github.io
     ```
 
 3. Install the dependencies:
