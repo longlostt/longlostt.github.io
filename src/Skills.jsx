@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "./data"; // Import skills from the data file
+import { frontendSkills, backendSkills } from "./data";
 import Skill from "./Skill";
 
 export default function Skills() {
@@ -8,10 +8,23 @@ export default function Skills() {
       <h2 className="sectionTitle" id="skills">
         Skills
       </h2>
-      <div className="skills">
-        {skills.map((skill, index) => (
-          <Skill key={index} skill={skill} />
-        ))}
+      <div className="skills-columns">
+        <div className="skills-section">
+          <h3 className="skills-heading">Frontend</h3>
+          <div className="skills-grid">
+            {frontendSkills.map((skill, index) => (
+              <Skill key={skill.title} skill={skill} />
+            ))}
+          </div>
+        </div>
+        <div className="skills-section">
+          <h3 className="skills-heading">Backend</h3>
+          <div className="skills-grid">
+            {backendSkills.map((skill, index) => (
+              <Skill key={skill.title} skill={skill} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ export default function Header() {
         <h1 className="intro">
           Hi, I'm <span className="name">Georgy Bochnev</span>
         </h1>
-        <p className="prof">Software Developer</p>
+        <p className="prof">Full Stack Software Developer</p>
         <div className="contactLinks">
           <a href="mailto:bg2811777@gmail.com" className="icon">
             <CiMail size={26} />

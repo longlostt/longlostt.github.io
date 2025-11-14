@@ -10,9 +10,7 @@ export default function Project({ project }) {
   };
 
   const prevImage = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - 1 + project.image.length) % project.image.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + project.image.length) % project.image.length);
   };
 
   return (
@@ -35,7 +33,15 @@ export default function Project({ project }) {
         )}
       </div>
       <div className="projContent">
-        <h3 className="projTitle">{project.title}</h3>
+        <h3 className="projTitle">
+          {project.link ? (
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.title}
+            </a>
+          ) : (
+            project.title
+          )}
+        </h3>
         <p className="projDescription">{project.description}</p>
         <p className="projTech">
           Technologies: {project.technologies.join(", ")}
